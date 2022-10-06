@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ObserverMuster</OriginalElement>
+  <nodes>
+    <node x="98.25" y="338.0">ObserverMuster.WetterStation</node>
+    <node x="504.0" y="-24.5">ObserverMuster.AnzeigeElement</node>
+    <node x="200.0" y="152.5">ObserverMuster.AktuelleBedingungen</node>
+    <node x="195.0" y="-19.0">ObserverMuster.Beobachter</node>
+    <node x="469.0" y="158.0">ObserverMuster.Statistikanzeigen</node>
+    <node x="-93.0" y="-41.0">ObserverMuster.Subjekt</node>
+    <node x="-98.0" y="125.0">ObserverMuster.WetterDaten</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ObserverMuster.Statistikanzeigen" target="ObserverMuster.AnzeigeElement" relationship="REALIZATION">
+      <point x="-0.0" y="-48.5" />
+      <point x="-0.0" y="31.5" />
+    </edge>
+    <edge source="ObserverMuster.WetterDaten" target="ObserverMuster.WetterDaten" relationship="DEPENDENCY">
+      <point x="-15.0" y="81.5" />
+      <point x="21.0" y="345.5" />
+      <point x="-115.5" y="345.5" />
+      <point x="-115.5" y="206.5" />
+      <point x="-134.0" y="-0.0" />
+    </edge>
+    <edge source="ObserverMuster.WetterDaten" target="ObserverMuster.Beobachter" relationship="TO_MANY">
+      <point x="67.0" y="-81.5" />
+      <point x="103.0" y="105.0" />
+      <point x="257.25" y="105.0" />
+      <point x="-62.25" y="26.0" />
+    </edge>
+    <edge source="ObserverMuster.AktuelleBedingungen" target="ObserverMuster.Subjekt" relationship="TO_ONE">
+      <point x="-62.25" y="-54.0" />
+      <point x="262.25" y="95.0" />
+      <point x="108.0" y="95.0" />
+      <point x="67.0" y="48.0" />
+    </edge>
+    <edge source="ObserverMuster.WetterStation" target="ObserverMuster.WetterDaten" relationship="CREATE">
+      <point x="-0.0" y="-43.0" />
+      <point x="180.25" y="313.0" />
+      <point x="36.0" y="313.0" />
+      <point x="-0.0" y="81.5" />
+    </edge>
+    <edge source="ObserverMuster.Subjekt" target="ObserverMuster.Beobachter" relationship="DEPENDENCY">
+      <point x="134.0" y="-0.0" />
+      <point x="-124.5" y="-0.0" />
+    </edge>
+    <edge source="ObserverMuster.WetterDaten" target="ObserverMuster.Subjekt" relationship="REALIZATION">
+      <point x="-67.0" y="-81.5" />
+      <point x="-31.0" y="105.0" />
+      <point x="-26.0" y="105.0" />
+      <point x="-67.0" y="48.0" />
+    </edge>
+    <edge source="ObserverMuster.WetterStation" target="ObserverMuster.AktuelleBedingungen" relationship="CREATE">
+      <point x="-0.0" y="-43.0" />
+      <point x="180.25" y="313.0" />
+      <point x="324.5" y="313.0" />
+      <point x="-0.0" y="54.0" />
+    </edge>
+    <edge source="ObserverMuster.Statistikanzeigen" target="ObserverMuster.Beobachter" relationship="REALIZATION">
+      <point x="-0.0" y="-48.5" />
+      <point x="593.5" y="85.0" />
+      <point x="329.5" y="85.0" />
+      <point x="329.5" y="75.0" />
+      <point x="381.75" y="75.0" />
+      <point x="62.25" y="26.0" />
+    </edge>
+    <edge source="ObserverMuster.AktuelleBedingungen" target="ObserverMuster.AnzeigeElement" relationship="REALIZATION">
+      <point x="62.25" y="-54.0" />
+      <point x="386.75" y="105.0" />
+      <point x="329.5" y="105.0" />
+      <point x="329.5" y="95.0" />
+      <point x="593.5" y="95.0" />
+      <point x="-0.0" y="31.5" />
+    </edge>
+    <edge source="ObserverMuster.AktuelleBedingungen" target="ObserverMuster.AktuelleBedingungen" relationship="DEPENDENCY">
+      <point x="114.5" y="54.0" />
+      <point x="439.0" y="314.5" />
+      <point x="449.0" y="314.5" />
+      <point x="124.5" y="54.0" />
+    </edge>
+    <edge source="ObserverMuster.AktuelleBedingungen" target="ObserverMuster.Beobachter" relationship="REALIZATION">
+      <point x="62.25" y="-54.0" />
+      <point x="386.75" y="105.0" />
+      <point x="329.5" y="105.0" />
+      <point x="329.5" y="75.0" />
+      <point x="381.75" y="75.0" />
+      <point x="62.25" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="320.0" y="201.5" />
+  <SelectedNodes>
+    <node>ObserverMuster.Subjekt</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>Open Files</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
